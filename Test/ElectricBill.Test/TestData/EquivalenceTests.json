@@ -1,0 +1,218 @@
+[
+  {
+    "kWh": 40,
+    "houseHolds": 3,
+    "month": 2,
+    "expected": 79360
+  },
+  {
+    "kWh": 40,
+    "houseHolds": 3,
+    "month": 4,
+    "expected": 95232
+  },
+  {
+    "kWh": 40,
+    "houseHolds": 7,
+    "month": 2,
+    "expected": 95232
+  },
+  {
+    "kWh": 40,
+    "houseHolds": 7,
+    "month": 4,
+    "expected": 114278
+  },
+  {
+    "kWh": 40,
+    "houseHolds": 22,
+    "month": 2,
+    "expected": 119040
+  },
+  {
+    "kWh": 40,
+    "houseHolds": 22,
+    "month": 4,
+    "expected": 142848
+  },
+  {
+    "kWh": 70,
+    "houseHolds": 3,
+    "month": 2,
+    "expected": 138880
+  },
+  {
+    "kWh": 70,
+    "houseHolds": 3,
+    "month": 4,
+    "expected": 166656
+  },
+  {
+    "kWh": 70,
+    "houseHolds": 7,
+    "month": 2,
+    "expected": 166656
+  },
+  {
+    "kWh": 70,
+    "houseHolds": 7,
+    "month": 4,
+    "expected": 199987
+  },
+  {
+    "kWh": 70,
+    "houseHolds": 22,
+    "month": 2,
+    "expected": 208320
+  },
+  {
+    "kWh": 70,
+    "houseHolds": 22,
+    "month": 4,
+    "expected": 249984
+  },
+  {
+    "kWh": 141,
+    "houseHolds": 3,
+    "month": 2,
+    "expected": 279744
+  },
+  {
+    "kWh": 141,
+    "houseHolds": 3,
+    "month": 4,
+    "expected": 335693
+  },
+  {
+    "kWh": 141,
+    "houseHolds": 7,
+    "month": 2,
+    "expected": 335693
+  },
+  {
+    "kWh": 141,
+    "houseHolds": 7,
+    "month": 4,
+    "expected": 402831
+  },
+  {
+    "kWh": 141,
+    "houseHolds": 22,
+    "month": 2,
+    "expected": 419616
+  },
+  {
+    "kWh": 141,
+    "houseHolds": 22,
+    "month": 4,
+    "expected": 503539
+  },
+  {
+    "kWh": 234,
+    "houseHolds": 3,
+    "month": 2,
+    "expected": 271400
+  },
+  {
+    "kWh": 234,
+    "houseHolds": 3,
+    "month": 4,
+    "expected": 325680
+  },
+  {
+    "kWh": 234,
+    "houseHolds": 7,
+    "month": 2,
+    "expected": 557107
+  },
+  {
+    "kWh": 234,
+    "houseHolds": 7,
+    "month": 4,
+    "expected": 668529
+  },
+  {
+    "kWh": 234,
+    "houseHolds": 22,
+    "month": 2,
+    "expected": 696384
+  },
+  {
+    "kWh": 234,
+    "houseHolds": 22,
+    "month": 4,
+    "expected": 835661
+  },
+  {
+    "kWh": 350,
+    "houseHolds": 3,
+    "month": 2,
+    "expected": 115700
+  },
+  {
+    "kWh": 350,
+    "houseHolds": 3,
+    "month": 4,
+    "expected": 138840
+  },
+  {
+    "kWh": 350,
+    "houseHolds": 7,
+    "month": 2,
+    "expected": 833280
+  },
+  {
+    "kWh": 350,
+    "houseHolds": 7,
+    "month": 4,
+    "expected": 999936
+  },
+  {
+    "kWh": 350,
+    "houseHolds": 22,
+    "month": 2,
+    "expected": 1041600
+  },
+  {
+    "kWh": 350,
+    "houseHolds": 22,
+    "month": 4,
+    "expected": 1249920
+  },
+  {
+    "kWh": 460,
+    "houseHolds": 3,
+    "month": 2,
+    "expected": 377500
+  },
+  {
+    "kWh": 460,
+    "houseHolds": 3,
+    "month": 4,
+    "expected": 453000
+  },
+  {
+    "kWh": 460,
+    "houseHolds": 7,
+    "month": 2,
+    "expected": 389640
+  },
+  {
+    "kWh": 460,
+    "houseHolds": 7,
+    "month": 4,
+    "expected": 467568
+  },
+  {
+    "kWh": 460,
+    "houseHolds": 22,
+    "month": 2,
+    "expected": 1368960
+  },
+  {
+    "kWh": 460,
+    "houseHolds": 22,
+    "month": 4,
+    "expected": 1642752
+  }
+]

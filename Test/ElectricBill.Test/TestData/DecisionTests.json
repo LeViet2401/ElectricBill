@@ -1,0 +1,218 @@
+[
+  {
+    "kWh": 40,
+    "houseHolds": 3,
+    "month": 2,
+    "expected": 0.00
+  },
+  {
+    "kWh": 40,
+    "houseHolds": 3,
+    "month": 4,
+    "expected": 0.00
+  },
+  {
+    "kWh": 40,
+    "houseHolds": 3,
+    "month": 4,
+    "expected": 0.00
+  },
+  {
+    "kWh": 40,
+    "houseHolds": 3,
+    "month": 2,
+    "expected": 0.00
+  },
+  {
+    "kWh": 40,
+    "houseHolds": 3,
+    "month": 2,
+    "expected": 0.00
+  },
+  {
+    "kWh": 70,
+    "houseHolds": 22,
+    "month": 4,
+    "expected": 0.00
+  },
+  {
+    "kWh": 70,
+    "houseHolds": 22,
+    "month": 4,
+    "expected": 0.00
+  },
+  {
+    "kWh": 70,
+    "houseHolds": 22,
+    "month": 4,
+    "expected": 0.00
+  },
+  {
+    "kWh": 70,
+    "houseHolds": 22,
+    "month": 4,
+    "expected": 0.00
+  },
+  {
+    "kWh": 70,
+    "houseHolds": 22,
+    "month": 4,
+    "expected": 0.00
+  },
+  {
+    "kWh": 70,
+    "houseHolds": 22,
+    "month": 4,
+    "expected": 0.00
+  },
+  {
+    "kWh": 70,
+    "houseHolds": 22,
+    "month": 4,
+    "expected": 0.00
+  },
+  {
+    "kWh": 70,
+    "houseHolds": 22,
+    "month": 4,
+    "expected": 0.00
+  },
+  {
+    "kWh": 141,
+    "houseHolds": 11,
+    "month": 4,
+    "expected": 0.00
+  },
+  {
+    "kWh": 141,
+    "houseHolds": 11,
+    "month": 4,
+    "expected": 0.00
+  },
+  {
+    "kWh": 141,
+    "houseHolds": 11,
+    "month": 4,
+    "expected": 0.00
+  },
+  {
+    "kWh": 141,
+    "houseHolds": 11,
+    "month": 4,
+    "expected": 0.00
+  },
+  {
+    "kWh": 141,
+    "houseHolds": 11,
+    "month": 4,
+    "expected": 0.00
+  },
+  {
+    "kWh": 141,
+    "houseHolds": 11,
+    "month": 4,
+    "expected": 0.00
+  },
+  {
+    "kWh": 141,
+    "houseHolds": 11,
+    "month": 4,
+    "expected": 0.00
+  },
+  {
+    "kWh": 234,
+    "houseHolds": 3,
+    "month": 2,
+    "expected": 0.00
+  },
+  {
+    "kWh": 234,
+    "houseHolds": 3,
+    "month": 2,
+    "expected": 0.00
+  },
+  {
+    "kWh": 234,
+    "houseHolds": 3,
+    "month": 2,
+    "expected": 0.00
+  },
+  {
+    "kWh": 234,
+    "houseHolds": 3,
+    "month": 2,
+    "expected": 0.00
+  },
+  {
+    "kWh": 234,
+    "houseHolds": 3,
+    "month": 2,
+    "expected": 0.00
+  },
+  {
+    "kWh": 350,
+    "houseHolds": 22,
+    "month": 4,
+    "expected": 0.00
+  },
+  {
+    "kWh": 350,
+    "houseHolds": 22,
+    "month": 4,
+    "expected": 0.00
+  },
+  {
+    "kWh": 350,
+    "houseHolds": 22,
+    "month": 4,
+    "expected": 0.00
+  },
+  {
+    "kWh": 350,
+    "houseHolds": 22,
+    "month": 4,
+    "expected": 0.00
+  },
+  {
+    "kWh": 350,
+    "houseHolds": 22,
+    "month": 4,
+    "expected": 0.00
+  },
+  {
+    "kWh": 460,
+    "houseHolds": 22,
+    "month": 4,
+    "expected": 0.00
+  },
+  {
+    "kWh": 460,
+    "houseHolds": 22,
+    "month": 4,
+    "expected": 0.00
+  },
+  {
+    "kWh": 460,
+    "houseHolds": 22,
+    "month": 4,
+    "expected": 0.00
+  },
+  {
+    "kWh": 460,
+    "houseHolds": 22,
+    "month": 4,
+    "expected": 0.00
+  },
+  {
+    "kWh": 460,
+    "houseHolds": 22,
+    "month": 4,
+    "expected": 0.00
+  },
+  {
+    "kWh": 460,
+    "houseHolds": 22,
+    "month": 4,
+    "expected": 0.00
+  }
+]
