@@ -1,0 +1,1 @@
+[{"kWh":100,"houseHolds":3,"month":4,"expected":238080},{"kWh":100,"houseHolds":3,"month":3,"expected":198400},{"kWh":200,"houseHolds":10,"month":4,"expected":571392},{"kWh":200,"houseHolds":10,"month":3,"expected":476160},{"kWh":300,"houseHolds":20,"month":10,"expected":1071360},{"kWh":300,"houseHolds":20,"month":9,"expected":892800}]

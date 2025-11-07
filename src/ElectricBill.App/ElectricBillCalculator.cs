@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Formats.Asn1.AsnWriter;
 
 namespace ElectricBill.App
 {
@@ -40,14 +41,18 @@ namespace ElectricBill.App
         private decimal CalculateBaseAmount(decimal kWh, int businessType)
         {
             decimal total = 0;
-            int previousLimit = 0;
+            decimal previousLimit = 0;
 
             foreach (var (limit, price) in PriceTiers)
             {
-                if (kWh > limit * businessType)
+                int newLimit = limit * businessType;
+                if (limit > 400) {
+                    newLimit = limit;
+                }
+                if (kWh > newLimit)
                 {
-                    total += (limit - previousLimit) * price;
-                    previousLimit = limit * businessType;
+                    total += (newLimit - previousLimit) * price;
+                    previousLimit = newLimit;
                 }
                 else
                 {

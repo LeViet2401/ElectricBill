@@ -21,13 +21,13 @@
     "kWh": 2147483646,
     "houseHolds": 4,
     "month": 8,
-    "expected": -10300260
+    "expected": 7430292177160
   },
   {
     "kWh": 2147483647,
     "houseHolds": 4,
     "month": 8,
-    "expected": -10300260
+    "expected": 7430292180620
   },
   {
     "kWh": 2147483648,
