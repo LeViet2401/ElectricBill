@@ -3,23 +3,10 @@ using ElectricBill.App;
 using System.Collections.Generic;
 using System.Text.Json;
 
-Console.WriteLine("Hello, World!");
+Console.WriteLine("-------Hoa doan tinh tien dien-------");
 ElectricBillCalculator calculator = new ElectricBillCalculator();
-//BoundaryTests
-//EquivalenceTests
-//DecisionTests
-string test = "EquivalenceTests";
-var jsonPath = Path.Combine($"D:\\Project\\Learning\\VNU\\ElectricBill\\Test\\ElectricBill.Test\\TestData", $"{test}.json");
-var json = File.ReadAllText(jsonPath);
-var testCases = JsonSerializer.Deserialize<List<TestCase>>(json);
-List<TestCase> newList = new List<TestCase>();
-foreach (var t in testCases)
-{
-    var a = calculator.CalculateElectricBill(t.kWh, t.houseHolds, t.month);
-    newList.Add(new TestCase(t.kWh, t.houseHolds, t.month, a));
-}
-string json2 = JsonSerializer.Serialize(newList);
-File.WriteAllText($"D:\\Project\\Learning\\VNU\\ElectricBill\\Test\\ElectricBill.Test\\TestData\\{test}_result.json", json2);
+var bill = calculator.CalculateElectricBill(350, 2, 7);
+Console.WriteLine($"Tong so tien dien phai tra: {bill} VND");
+Console.WriteLine("-------------------------------------");
 
-Console.WriteLine("Done");
 Console.ReadLine();
