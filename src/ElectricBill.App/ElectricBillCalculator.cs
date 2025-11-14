@@ -29,52 +29,56 @@ namespace ElectricBill.App
             if (month < 1 || month > 12)
                 return -1;
 
-            decimal baseAmount = CalculateBaseAmount(kWh, businessType);
-            decimal businessMultiplier = GetBusinessMultiplier(businessType);
-            decimal monthMultiplier = GetMonthMultiplier(month);
+            decimal baseAmount = 0;
+            decimal businessMultiplier = 1;
+            decimal monthMultiplier = 1;
 
-
-            var total = baseAmount * businessMultiplier * monthMultiplier;
-            return Math.Round(total);
-        }
-
-        private decimal CalculateBaseAmount(decimal kWh, int businessType)
-        {
-            decimal total = 0;
             decimal previousLimit = 0;
 
             foreach (var (limit, price) in PriceTiers)
             {
                 int newLimit = limit * businessType;
-                if (limit > 400) {
+                if (limit > 400)
+                {
                     newLimit = limit;
                 }
                 if (kWh > newLimit)
                 {
-                    total += (newLimit - previousLimit) * price;
+                    baseAmount += (newLimit - previousLimit) * price;
                     previousLimit = newLimit;
                 }
                 else
                 {
-                    total += ((decimal)(kWh - previousLimit)) * price;
+                    baseAmount += ((decimal)(kWh - previousLimit)) * price;
                     break;
                 }
             }
 
-            return total;
+            if (businessType <= 5 && businessType >= 1)
+            {
+                businessMultiplier = 1.0m;
+            }
+            else if (businessType <= 15 && businessType >= 6)
+            {
+                businessMultiplier = 1.2m;
+            }
+            else
+            {
+                businessMultiplier = 1.5m;
+            }
+
+            if ((month <= 6 && month >= 1))
+            {
+                monthMultiplier = 1.0m;
+            }    
+            else
+            {
+                monthMultiplier = 1.2m;
+            }    
+
+            var total = baseAmount * businessMultiplier * monthMultiplier;
+            return Math.Round(total);
         }
 
-        private decimal GetBusinessMultiplier(int businessType)
-        {
-            if (businessType >= 1 && businessType <= 5) return 1.0m;
-            if (businessType >= 6 && businessType <= 15) return 1.2m;
-            return 1.5m;
-        }
-
-        private decimal GetMonthMultiplier(int month)
-        {
-            if ((month >= 1 && month <= 3) || (month >= 7 && month <= 9)) return 1.0m;
-            return 1.2m;
-        }
     }
 }
