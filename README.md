@@ -22,34 +22,69 @@ Cần có chức năng tính tiền điện với các đầu vào gồm:
 
 •	m : Tháng tiêu thụ điện. Các tháng cao điểm sẽ được nhân với hệ giá 1.2.
 
-Mối quan hệ input-output
 
-![alt text](input-output.png)
+3.	PipeLine thực hiện
 
-3.	Kiểm thử biên
-Kiểm thử biên sẽ tiến hành với bộ test gồm 18 test case gồm cả cận biên hợp lệ và cận biên không hợp lệ.
+Chương trình cần test được viết bởi C#.
 
-![alt text](kiemthubien.png)
+Bước 1: Sử dụng Compiler của C# (Roslyn) phân tích cú pháp và xây dựng AST (Abstract Syntax Tree).
 
-4.	Kiểm thử tương đương
-Kiểm thử tương đương mạnh với bộ test gồm 36(6x3x2) test case: 
+Bước 2: Xây dựng CFG. Tuy nhiên Roslyn đã phân rã các điều kiện phức dẫn đến CFG đã chia nhỏ các điều kiện.
 
-![alt text](kiemthutuongduong.png)
+Bước 3: Từ CFG sử dụng thuật toán DFS để tìm ra tất cả test path.
 
-5.	Kiểm thử bảng quyết định
-Kiểm thử bảng quyết định có 6 Testcase sau:
+Kết quả tạo CFG
 
-![alt text](bangquyetdinh.png)
+ ![alt text](CalculateElectricBill_cfg.png)
+
+Bước 4: Tìm các test path theo điều kiện: phủ lệnh, phủ nhánh, phủ đường.
+
+Bước 5: Từ các test path đưa vào Z3: xây dựng các điều kiện ràng buộc để tính toán Input cho từng test case.
+
+Bước 6: Tính Expected output với từng test case.
+
+Bước 7: Chạy các bộ test.
+
+4.	Phủ Lệnh
+
+Phủ lệnh gồm 3 test Path
+
+5.	Phủ Nhánh
+
+Phủ nhánh gồm 5 test Path
+
+6.	Phủ Đường
+
+Phủ đường gồm 69 test Path
+
+
 
 ## Cấu trúc dự án.
 📁 ElectricBill/
+
 │
+
 ├── 📁 src/ElectricBill.App/                    # Dự án tính hóa đơn điện
+
 ├────── ElectricBillCalculator.cs               # Hàm tính toán hóa đơn điện CalculateElectricBill
+
+├────── CFGGenerator.cs                         # Class tao CFG bằng Roslyn
+
+├────── CfgPathFinder.cs                        # Class tìm test path bằng DFS và lọc test path theo độ phủ: Lệnh, nhánh, đường
+
+├────── TestInputGenerator.cs                   # Sinh input cho test bằng Z3 (chưa hoàn thiện logic cho các điều kiện phức)
+
+
 ├── 📁 Test/ElectricBill.Test/                  # Các Unit Test và Test Data
+
 ├────── 📁 TestData
+
 ├───────── BoundaryTests.json                   # Bộ test kiểm thử biên
+
 ├───────── EquivalenceTests.json                # Bộ test kiểm thử tương đương
+
 ├───────── DecisionTests.json                   # Bộ test kiểm thử bảng quyết định
+
 ├────── ElectricBillCalculatorTests.cs          # Unit Test của hàm CalculateElectricBill
+
 └── README.md   
